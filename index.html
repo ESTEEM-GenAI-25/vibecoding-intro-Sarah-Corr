@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarah Corr — Personal Website</title>
+  <meta name="description" content="Personal website for Sarah Corr — MS ESTEEM at Notre Dame; MEng UCD. Engineering + Data Science with a passion for healthtech and patient-centered design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0b10;
+      --card: #12111a;
+      --muted: #9aa3b2;
+      --text: #e7e9ee;
+      --purple: #7c3aed;
+      --green: #00d08f;
+      --accent: linear-gradient(135deg, var(--purple), var(--green));
+      --ring: rgba(124, 58, 237, 0.35);
+      --shadow: 0 10px 30px rgba(0,0,0,0.45), 0 2px 10px rgba(0,0,0,0.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box }
+    html, body { height: 100% }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui;
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(124,58,237,0.25), transparent 60%),
+                  radial-gradient(900px 700px at -10% 10%, rgba(0,208,143,0.18), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none }
+    .container { width: min(1100px, 92%); margin: 0 auto }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background: rgba(12,11,16,0.6); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0 }
+    .brand { font-weight: 800; letter-spacing: 0.4px }
+    .brand .accent { background: var(--accent); -webkit-background-clip: text; background-clip: text; color: transparent }
+    nav a { margin-left: 22px; color: var(--muted); font-weight: 500 }
+    nav a:hover { color: #d9dcea }
+    .hero { padding: 64px 0 32px; display: grid; grid-template-columns: 1.25fr 1fr; gap: 32px; align-items: center; }
+    @media (max-width: 880px) { .hero { grid-template-columns: 1fr; padding-top: 40px } }
+    .badge { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background: rgba(124,58,237,0.14); border:1px solid rgba(124,58,237,0.35); color:#e9e1ff; font-weight:600; font-size:12px }
+    .headline { font-size: clamp(30px, 4vw + 10px, 56px); margin: 14px 0 10px; font-weight: 800 }
+    .sub { color: #cbd2df; font-size: 18px; max-width: 52ch }
+    .cta { margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap }
+    .btn { display:inline-flex; align-items:center; gap:10px; padding: 12px 16px; border-radius: 12px; background:#161522; color:#f0f3f7; font-weight:700; box-shadow: var(--shadow); border: 1px solid rgba(255,255,255,0.12); }
+    .btn.primary { border: none; background: var(--accent) }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02) 18%); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); box-shadow: var(--shadow) }
+    .card-pad { padding: 22px }
+    .section { padding: 32px 0 }
+    .section h2 { font-size: 24px; margin: 0 0 14px; font-weight: 800 }
+    .avatar img { width: 100%; border-radius: 24px; box-shadow: var(--shadow); }
+    .background-img { margin-top: 20px; }
+    .background-img img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Sarah <span class="accent">Corr</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">MS ESTEEM @ Notre Dame • MEng UCD</span>
+        <h1 class="headline">Engineering & Data Science for human‑centered healthtech.</h1>
+        <p class="sub">I’m Sarah Corr, based in South Bend, IN. I design data‑driven solutions and prototypes for clinical and consumer health—most recently a wearable that tracks abdominal distension using Hall effect sensors.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:sarah.corr@ucdconnect.ie">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/sarah-corr-b571a6233" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="headshot.jpg" alt="Headshot of Sarah Corr" />
+      </div>
+    </section>
+    <div class="background-img">
+      <img src="notre_dame_campus (1).jpg" alt="Notre Dame campus" />
+    </div>
+
+    <section id="about" class="section">
+      <div class="card card-pad">
+        <h2>About</h2>
+        <p>I’m an engineer and data scientist with a passion for building tangible tools that make health data more meaningful to patients and clinicians. I love translating research into prototypes and products. I am also proficient in Revit, ArcGIS, SAP2000, Python, R, Matlab, and the Microsoft Office suite【16†files_uploaded_in_conversation】.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="card card-pad">
+        <ul>
+          <li>FoodMarble: Engineering & Data Science Intern, Master Thesis Project (2024–2025)</li>
+          <li>EY: Audit Intern (2021)</li>
+          <li>Camp Watitoh: Counselor, Lifeguard, Instructor (2022–2023)</li>
+          <li>Shirley Arms Hotel: Waitress & Housekeeper (2020–2022)</li>
+          <li>Group Practice Carrickmacross: Medical Secretary (2013–2019)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card card-pad">
+        <ul>
+          <li>MS, Engineering, Science & Technology Entrepreneurship (ESTEEM), University of Notre Dame (2025–2026)</li>
+          <li>MEng, Civil Engineering with Business, University College Dublin (2023–2025)</li>
+          <li>BSc, Civil Engineering, University College Dublin (2020–2023)</li>
+          <li>Semester Abroad, Civil Engineering, San Jose State University (2023)</li>
+          <li>Leaving Certificate, St. Louis Secondary School, Carrickmacross (2014–2020)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <div class="card card-pad">
+        <ul>
+          <li>Completed the first 7 piano grades, aiming to complete the 8th【16†files_uploaded_in_conversation】.</li>
+          <li>Member of women’s lacrosse team at San Jose State University.</li>
+          <li>Won Dublin league division four cup with UCD ladies basketball (2022/23).</li>
+          <li>Club football team: Ladies junior club & Ulster championships (2021/22).</li>
+          <li>Under 19s All-Ireland C Schools League and Cup Basketball champion (2019).</li>
+          <li>Monaghan Ladies football U16 & U18; Ulster Ladies Gaelic Football championship (2016).</li>
+          <li>North East Regional Ladies basketball team — captained U18 team at European Championships.</li>
+          <li>Scoil Rois Mathematician of the Year (2014).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="card card-pad">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sarah.corr@ucdconnect.ie">sarah.corr@ucdconnect.ie</a></p>
+        <p>Phone: +353 87 412 0230</p>
+        <p>Location: South Bend, Indiana, United States</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sarah-corr" target="_blank">linkedin.com/in/sarah-corr</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Sarah Corr</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
