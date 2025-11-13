@@ -1,0 +1,5 @@
+{
+  "name": "StyleSync App Demo",
+  "description": "An AI-powered outfit assistant that generates styles from your real wardrobe. Upload your clothes, set your context, and get personalized outfit suggestions as well as shopping assistance.",
+  "requestFramePermissions": []
+}
