@@ -27,6 +27,12 @@ This project is a simple web application that helps users create outfits from th
 
 This repository contains everything needed to view, run, and understand the project.
 
+Demo Video
+Watch a walkthrough of StyleSync: https://drive.google.com/drive/folders/15fwC6taghNBJ9keRbZrzk-tTewP4SIND?usp=drive_link
+
+Link to WebApp:
+https://ai.studio/apps/drive/1H1vEJeZAe3ku5eWUbAjB2zDvtNcKp-yj
+
 Project Overview and Purpose
 
 The purpose of this project is to demonstrate how generative AI can be used inside a simple, user-facing app built with Google AI Studio. StyleSync helps users decide what to wear by allowing them to upload images of their clothes and then using AI to suggest outfits based on the context of their day.
@@ -79,7 +85,7 @@ Without the AI component, the app would be nothing more than an image uploader. 
 
 File Structure
 
-Only the recently added files (today’s uploads) relate to this project. Older files (approx 2 months ago) in the repository are unrelated previous assignments (I could not figure out how to make a new repository).
+Only the recently added files (today’s uploads & 1 month ago) relate to this project. Older files (approx 2 months ago) in the repository are unrelated previous assignments (I could not figure out how to make a new repository).
 
 index.tsx, App.tsx: Main interface and logic
 
